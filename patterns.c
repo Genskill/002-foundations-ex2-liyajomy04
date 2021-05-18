@@ -34,7 +34,7 @@ int main(void)
      }
     else
       {
-        printf"error\n");
+        printf("error\n");
       }
 }          
              
