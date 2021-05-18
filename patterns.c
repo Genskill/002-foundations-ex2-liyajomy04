@@ -4,11 +4,10 @@
 int main(void)
 {
   int i,j;
-  int pattern = ("Enter type of pattern(1 or 2)\n");
-  int n = ("Number of rows\n");
-  switch(pattern)
-  {
-    case 1:
+  int pattern = get_int("Enter type of pattern(1 or 2)\n");
+  int n = get_int("Number of rows\n");
+  if(pattern == 1)
+    {
       for(i=n; i>=1; i--)
       {
         for(j=1; j<=i; j++)
@@ -17,8 +16,9 @@ int main(void)
         }
         printf("\n");
       }
-      break;
-    case 2:
+    }
+   else if(pattern == 2)
+     {
       for(i =1; i<=n; i++)
       {
         for(j=i; j<=n; j++)
@@ -31,8 +31,11 @@ int main(void)
         }
         printf("\n");
       }
-      break;
-  } 
+     }
+    else
+      {
+        printf"error\n");
+      }
 }          
              
       
