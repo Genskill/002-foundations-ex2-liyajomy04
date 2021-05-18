@@ -9,7 +9,7 @@ int main(void)
   switch(pattern)
   {
     case 1:
-      for(int i=n; i>=1; i--)
+      for(i=n; i>=1; i--)
       {
         for(j=1; j<=i; j++)
         {
@@ -19,7 +19,7 @@ int main(void)
       }
       break;
     case 2:
-      for(int i =1; i<=n; i++)
+      for(i =1; i<=n; i++)
       {
         for(j=i; j<=n; j++)
         {
@@ -32,6 +32,7 @@ int main(void)
         printf("\n");
       }
       break;
-  }           
+  } 
+}          
              
       
