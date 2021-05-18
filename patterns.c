@@ -18,7 +18,7 @@ int main(void)
         printf("\n");
       }
       break;
-    case 2;
+    case 2:
       for(int i =1; i<=n; i++)
       {
         for(j=i; j<=n; j++)
@@ -33,8 +33,7 @@ int main(void)
       }
       break;
     default:
-      printf("No patterns available);
-        break;
+     break;
   }           
              
       
