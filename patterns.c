@@ -32,8 +32,6 @@ int main(void)
         printf("\n");
       }
       break;
-    default:
-     break;
   }           
              
       
