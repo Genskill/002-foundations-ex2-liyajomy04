@@ -6,9 +6,9 @@ int main(void){
   int n=get_int("Number of rows ");
   if(pattern==1)
     {
-      for(i=n; i>=1; i--)
+      for(int i=n; i>=1; i--)
       {
-        for(j=1; j<=i; j++)
+        for(int j=1; j<=i; j++)
         {
           printf("#");
         }
@@ -17,13 +17,13 @@ int main(void){
     }
    else if(pattern == 2)
      {
-      for(i=1; i<=0; i++)
+      for(int i=1; i<=0; i++)
       {
-        for(j=i; j<=n; j++)
+        for(int j=i; j<=n; j++)
        {
          printf(" ");
        }
-        for(j=1; j<=i; j++)
+        for(int j=1; j<=i; j++)
        {
          printf("#");
        }
