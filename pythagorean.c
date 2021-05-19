@@ -3,17 +3,29 @@
 
 int main(void)
 {
-  int a = get_int("side 1 \n");
-  int b = get_int("side 2 \n");
-  int c = get_int("side 3 \n");
-  int(sum) = (int)(a*a)+(b*b);
-   if((c*c) >= sum)
+  float a = get_float("side 1 \n");
+  float b = get_float("side 2 \n");
+  float c = get_float("side 3 \n");
+  if(a>b && a>c)
    {
-    printf("Yes\n");
+    if(b*b+c*c == a*a)
+    printf("Yes");
+    else
+    printf("No");
    }
-   else
+  if(b>c && b>a)
    {
-    printf("No\n");
+    if(a*a+c*c == b*b)
+    printf("Yes");
+    else
+    printf("No");
    }
-}
+  else
+   {
+    if(a*a+b*b == c*c)
+    printf("Yes");
+    else
+    printf("No");
+   }
+};
  
